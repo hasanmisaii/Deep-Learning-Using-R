@@ -39,6 +39,7 @@ model %>% compile(
 )
 
 
+
 # Train the model
 history <- model %>% fit(
                 train_dataset$data_X, train_dataset$data_y,
