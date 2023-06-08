@@ -8,4 +8,7 @@ reticulate::use_condaenv("python.exe")
 
 # Install keras and tensorflow in the R terminal using pip and install.packages()
 ## upload package Keras
+
+'''
 library(keras)
+'''
