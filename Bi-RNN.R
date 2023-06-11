@@ -8,7 +8,7 @@ library(keras)
 
 model <- keras_model_sequential()
 model %>%
-   bidirectional(layer_simple_rnn(units, return_sequences = FALSE), input_shape = c(num_features, ncol(train_data) - 1)) %>%
+   bidirectional(layer_simple_rnn(units, return_sequences = FALSE), input_shape = c(look_back + num_features, ncol(train_data) - 1)) %>%
    # layer_dropout(rate = 0.5) %>%      #regularization to prevent overfitting 
    layer_dense(units = 1) 
 
