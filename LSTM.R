@@ -7,7 +7,7 @@ library(keras)
 
 model <- keras_model_sequential()
 model %>%
-   layer_lstm(units, return_sequences = FALSE, input_shape = c(num_features, ncol(train_data)-1), activation = 'relu') %>%
+   layer_lstm(units, return_sequences = FALSE, input_shape, activation = 'relu') %>%
    # layer_dropout(rate = 0.5) %>%      #regularization to prevent overfitting 
    layer_dense(units = 1) 
 
