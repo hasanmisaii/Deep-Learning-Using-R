@@ -11,7 +11,7 @@ model %>%
    bidirectional(layer_lstm(units, return_sequences = FALSE, go_backwards = FALSE),
                    backward_layer = layer_lstm(units, return_sequences = FALSE, go_backwards = TRUE),
                    merge_mode = "concat",
-                   input_shape = c(look_back + num_features, ncol(train_data)-1)) %>%
+                   input_shape = c(num_features, ncol(train_data)-1)) %>%
    # layer_dropout(rate = 0.5) %>%      #regularization to prevent overfitting 
    layer_dense(units = 1) 
 
