@@ -8,7 +8,7 @@ library(keras)
 
 model <- keras_model_sequential()
 model %>%
-   layer_rnn(units, input_shape = c(num_features, ncol(train_data) - 1), implementation = 2, activation = 'tanh', return_sequences = FALSE) %>%
+   layer_rnn(units, input_shape, implementation = 2, activation = 'tanh', return_sequences = FALSE) %>%
    # layer_dropout(rate = 0.5) %>%      #regularization to prevent overfitting 
    layer_dense(units = 1) 
 
