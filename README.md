@@ -52,7 +52,7 @@ library(keras)
 
 ### This article is aimed at applying followinf deep learning models using R:
 - Simple Artificial Neural Network (ANN)
-- - [Code]() 
+- - [Code](https://github.com/hasanmisaii/Deep-Learning-Using-R/blob/10896df56f8b1e9f4e6170d3bd488f4a49e4ebfa/Simple_ANN.R) 
 - - [Detail]()
 - Recurrent Neural Network (RNN)
 - - [Code]() 
