@@ -75,7 +75,7 @@ train_dataset <- create_dataset(train_data, look_back)
 test_dataset <- create_dataset(test_data, look_back)
 
 
-
+## Define RNN Model
 model <- keras_model_sequential()
 model %>%
    layer_rnn(units, input_shape = c(look_back + 1, ncol(train_data)-1), implementation = 2, activation = 'tanh', return_sequences = FALSE) %>%
