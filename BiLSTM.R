@@ -54,7 +54,7 @@ test_data[, -ncol(df)] <- scaled$scaled_test
 # cat("Order selected by AIC:", order_aic)
 
 
-# Convert the data into a 3D array for input into the LSTM
+# Convert the data into a 3D array for input into the BiLSTM
 create_dataset <- function(data, look_back = 1) {
   data_X_0 <- data_X_1 <- data_y <- c()
   for (i in 1:(nrow(data) - look_back)) {
